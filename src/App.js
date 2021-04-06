@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
 import './App.css';
+import Sidebar from './Sidebar';
+import Gallery from './Gallery';
+import SectionBgImg from './SectionBgImg';
+import Footer from './Footer';
+// import { ReactComponent as Logo } from './logo.svg'; // <Logo /> component
 
+// start/create new component with the name App
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app-container">
+            <h1>first React JSX App</h1>
+            <Header />
+            <Sidebar />
+            <Gallery />
+            <SectionBgImg />
+            <Footer />
+        </div>
+    )
 }
 
 export default App;
